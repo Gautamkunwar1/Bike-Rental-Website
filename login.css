@@ -1,0 +1,157 @@
+body {
+    background: url(loginImage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact {
+    background: transparent;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formbox {
+    width: 30vw;
+    height: 60vh;
+    padding: 40px;
+    margin-top: 60px;
+    color: rgb(51, 16, 16);
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.397);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(112, 73, 73, 0.2);
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+.formbox input[type="text"],
+.formbox input[type="email"],
+/* .formbox input[type="tel"], */
+.formbox input[type="password"],
+.formbox textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.formbox input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+a {
+    font-size: large;
+    color: rgb(31, 26, 39);
+    float: right;
+    font-weight: bolder;
+    text-decoration: none;
+    list-style: none;
+}
+
+p {
+    text-align: end;
+    font-size: large;
+}
+
+.formbox input[type="text"],
+.formbox input[type="password"],
+.formbox input[type="email"],
+.formbox textarea::placeholder {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    height: 5vh;
+    width: 30vw;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(240, 255, 24);
+    border: none;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    font-size: large;
+    color: rgb(126, 0, 52);
+}
+
+a {
+    color: rgb(255, 0, 0);
+    font-size: large;
+    font-weight: bolder;
+}
+
+/* Responsive Media Queries */
+@media only screen and (max-width: 1024px) {
+    .formbox {
+        width: 40vw;
+        height: auto; /* Adjust height for larger tablets */
+    }
+
+    button {
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .formbox {
+        width: 50vw;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    button {
+        width: 50vw;
+    }
+
+    a {
+        font-size: medium;
+    }
+
+    p {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .formbox {
+        width: 80vw;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    button {
+        width: 80vw;
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    a {
+        font-size: medium;
+    }
+
+    p {
+        font-size: small;
+        text-align: center;
+    }
+}

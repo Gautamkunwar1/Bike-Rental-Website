@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(12, 12, 12, 0.959);
+}
+.main {
+    background-image: url("bike_img.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #333;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    font-weight: bolder;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: yellow;
+    font-weight: bolder;
+    transition: all 1s ease-out;
+}
+
+.logobox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.logobox h5 {
+    margin: 0;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    margin-top: -350px;
+    gap: 15px;
+    padding: 0;
+}
+.hero > * {
+    text-align: center;
+    color: yellow;
+}
+.hero > :nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+}
+.hero > :nth-child(2),
+.hero > :nth-child(3) {
+    font-weight: bold;
+    font-size: 25px;
+}
+#list {
+    height: 40px;
+    width: 230px;
+    font-size: medium;
+    border-radius: 10px;
+}
+.separation {
+    height: 7px;
+    margin-top: 157px;
+    background-color: azure;
+    position: relative;
+    z-index: 10;
+}
+.heading {
+    color: rgba(255, 255, 255, 0.63);
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+.container {
+    display: flex;
+    gap: 25px;
+    padding: 56px 30px;
+}
+
+.card {
+    background-color: #333;
+    color: #1f1f1f;
+    height: 90vh;
+    transition: color 0.5s ease-in-out;
+}
+.card:hover {
+    color: yellow;
+    font-size: 20px;
+}
+.blk {
+    color: black;
+}
+a {
+    font-size: large;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+a:hover {
+    color: yellow;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+h1 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.about {
+    color: white;
+    display: flex;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1f1f1f;
+}
+.about p {
+    margin: 0 auto 20px;
+    max-width: 800px;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+.about img {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+div > h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: white;
+}
+div > p {
+    margin: 5px;
+    padding: 15px;
+    overflow: auto;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.footer-social {
+    margin-top: 10px;
+}
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+.social-icon:hover {
+    background-color: #555;
+}
+.top {
+    background-color: rgb(59, 56, 56);
+    text-align: center;
+    padding-top: 15px;
+    font-size: larger;
+    height: 50px;
+}
+.top:hover {
+    background-color: rgba(255, 255, 0, 0.507);
+}
+@media only screen and (max-width: 1190px) {
+    .navbar ul {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero {
+        margin-top: -300px;
+    }
+
+    .about {
+        padding: 30px 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero > :nth-child(1) {
+        font-size: 36px;
+    }
+
+    .hero > :nth-child(2),
+    .hero > :nth-child(3) {
+        font-size: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .hero > :nth-child(1) {
+        font-size: 24px;
+    }
+
+    .hero > :nth-child(2),
+    .hero > :nth-child(3) {
+        font-size: 16px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        height: auto;
+    }
+}
+/* Basic styles */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    font-size: 24px; /* Adjust size as needed */
+    color: white; /* Adjust color as needed */
+    cursor: pointer; /* Indicate clickable */
+}
+
+/* Styles for the mobile menu */
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav-links.mobile-menu {
+    display: none; /* Hidden by default on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on your navbar height */
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Match navbar background */
+}
+
+.nav-links.mobile-menu.active {
+    display: flex; /* Show when active */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show on small screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide navbar links on small screens */
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .menu-toggle {
+        display: none; /* Hide toggle button on larger screens */
+    }
+}
